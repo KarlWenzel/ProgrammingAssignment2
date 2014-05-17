@@ -25,10 +25,10 @@ makeCacheMatrix <- function( x = matrix() )
 ## function: cacheSolve
 ##
 ## param x: a CacheMatrix object created from the makeCacheMatrix() function (see above)
-## param ...: further arguments passed to or from other methods
+## param ...: further arguments passed through to the local solve() function call.
 ##
 ## this function returns the inverse of matrix x.  a cached value of the inverse is returned
-## if available, otherwise the invserse is calculated locally.
+## if available, otherwise the inverse is calculated locally.
 
 cacheSolve <- function( x, ... ) 
 {
