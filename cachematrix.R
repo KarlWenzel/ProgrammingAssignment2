@@ -1,7 +1,10 @@
+## WELCOME PEER GRADER!
+##
+## COMMENTS PERTAINING TO ENTIRE FILE
 ## The purpose for the following functions is to create a caching mechanism to store
 ## (invertable) R matrices and their respective inverse matrices.
 
-
+## COMMENTS PERTAINING TO 1ST FUNCTION
 ## function: makeCacheMatrix
 ##
 ## param x: optional matrix arguement, defaults to an empty matrix
@@ -21,14 +24,14 @@ makeCacheMatrix <- function( x = matrix() )
   list( set=set, get=get, setInverse=setInverse, getInverse=getInverse );
 }
 
-
+## COMMENTS PERTAINING TO 2ND FUNCTION
 ## function: cacheSolve
 ##
 ## param x: a CacheMatrix object created from the makeCacheMatrix() function (see above)
 ## param ...: further arguments passed through to the local solve() function call.
 ##
 ## this function returns the inverse of matrix x.  a cached value of the inverse is returned
-## if available, otherwise the inverse is calculated locally.
+## if available, otherwise the inverse is calculated locally and cached before being returned.
 
 cacheSolve <- function( x, ... ) 
 {
